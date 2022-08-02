@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyHoloWife</title>
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--來自fontawesome的小圖示-->
+    <script src="https://kit.fontawesome.com/cdb70a18da.js" crossorigin="anonymous"></script>
+
+    <!--使網頁符合各個裝置的寬度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--color hunt顏色-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    <!--google font中文字形
+        https://fonts.google.com/noto/specimen/Noto+Sans+TC?query=noto&preview.size=35    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+
+    <!--google font英文字型
+        網址同上-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        #second .row{
+            margin-top: 100px;
+        }
+    </style>
+
+
+<body>
+    <header>
+    <!--    NavBar為第一個div，取自↓
+    https://getbootstrap.com/docs/5.2/components/navbar/    -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <!--圖示-->
+                <a class="navbar-brand" href="#">
+                    <img src="pictures/holo/holoiconpng.png">
+                </a>
+                <!--未知-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--欄位與搜尋-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--欄位-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="introduce.html">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">連結</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                其他分頁
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="holowife.html">我的虛擬老婆</a></li>
+                            <li><a class="dropdown-item" href="market.html">艾恩格朗特商城</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item disabled" href="#">其他(無)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">聯絡我們</a>
+                        </li>
+                    </ul>
+                    <!--搜尋-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="輸入尋找關鍵字" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">尋找</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </header>
+
+        <!--intro-->
+        <section id="intro">
+            <div class="container-fluid bg-light p-5">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <!--自介開頭-->
+                            <div class="col-md-8 text-center" >
+                                <div style="display: flex;justify-content: center; align-items: center;">
+                                    <h4>
+                                        您好，我是陳偉宸，個性謙和樂觀，待人和善，邏輯清晰，善於簡化複雜概念，同時具換位思考能力。對待工作熱情，能站在團隊、公司立場，做出最佳貢獻！
+                                    </h4>
+                                </div>
+                            </div>
+                            <!--圖片-->
+                            <div class="col-md-4 text-right">
+                                <img src="pictures\introduce\me01.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+        <!--簡介的區塊-->
+        <section id="second">
+            <div class="container-fluid bg-light p-5">
+                <div class="container">
+                    <!--土生土長沙鹿人-->
+                    <div class="row">
+                        <div class="col-md-8">
+                            我是在台中土生土長的沙鹿人，在沙鹿國中就讀時就對數理相關科系產生濃厚興趣，也是我的強項科目，更打下穩固的邏輯基礎，對未知的事物常抱有追根究柢的精神。我認為唯有永不停止的好奇心才有持續學習的動力，最後我在畢業時領取市長獎，並將我的國中階段畫下完美的句點。
+                        </div>
+                        <div class="col-md-4">
+                            <img src="pictures\introduce\popcart1.JPG">
+                        </div>
+                    </div>
+                    <!--高中-->
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img src="pictures\introduce\robot1.png">
+                        </div>
+                        <div class="col-md-9">
+                            高中時就讀市立清水高中時參加了科學創意社，其中代表學校參加過WRO樂高機器人大賽並且拿到佳作的成績，這段經歷讓我了解了實務經驗的重要性，在將理想的步驟實踐到機器人上遇到了數不盡的問題與困難，除了要尋找問題的所在之外，還不斷的嘗試與修改以克服數不盡的困境。其中印象最深刻的是在比賽當天測試路線時，好長一段時間都不如預期地往地圖外跑，最後小組成員發現是燈光的差距使光感應器判定有誤差，因此修改了光感的判斷值才得以繼續比賽。這不斷碰壁並且將困難排除的歷練除了使我對尋找問題與故障排除的能力有所提升之外，更強化了我的邏輯思考能力，以及產生對程式撰寫的濃厚興趣。
+                        </div>
+                        <div class="col-md-2">
+                            
+                        </div>
+                    </div>
+                    <!--大學-->
+                    <div class="row">
+                        <div class="col-md-8">
+                            大學就讀國立聯合大學電機工程學系，除了修習本科課程之外，還額外修讀了機器學習與人工智慧等課別，這些課程除了要有資料蒐集與處理的能力之外，還要有更深度的程式撰寫能力。大數據與數據分析是未來的趨勢，從龐大的資料裡尋找自己需要的特徵與特性，甚至發現新的商機，都是大數據時代下必備的能力。而人工智慧的發展也讓我重新審思未來是個即將被機器人取代大量工作的時代，不論是各種資料的預測分析，甚至是平面與立體圖形上的抓錯取誤，都是人工智慧的天下。在這樣的環境下要如何保有一席之地，正是我們這個時代的共同課題。我也在這時進入了Python的世界並開始接觸學習，徜徉其中。
+                        </div>
+                        <div class="col-md-4">
+                            <img src="pictures\introduce\popcart1.JPG">
+                        </div>
+                    </div>
+                    <!--聯成-->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="pictures\introduce\popcart1.JPG">
+                        </div>
+                        <div class="col-md-8">
+                            大學畢業後我到了聯成電腦學習Python，為的是打下穩固的程式基礎，從基本的串列迴圈，循序漸進地學習到網路爬蟲與資料分析，以及機器學習的模組訓練，都使我的程式底子堅不可摧，並且於2021年考取了第一張證照MTA: Introduction to Programming Using Python。
+                        </div>
+                    </div>
+                    <!--結語-->
+                    <div class="row">
+                        <div class="col-md-8">
+                        目前持續用課餘時間精進自己的技術，同時也準備為貴公司全心全力付出我的熱忱與專業，並在團隊中發揮最大效用！
+                        </div>
+                        <div class="col-md-4">
+                            <img src="pictures\introduce\popcart1.JPG">
+                        </div>
+                    </div>
+        
+            
+            
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+
+</body>
+
+<!--footer的區塊
+    頁尾分三個區塊 都佔4格-->
+<footer>
+    <div class="container">
+        <div class='row'>
+            <div class='col-md-4 text-left'>
+                <img src='pictures/holo/holoicon.jpg' width='85'>
+                <p>HOLOLIVE</p>
+            </div>
+            <div class='col-md-4 text-left'>
+                <ul>
+                    <li><a href='market.html'>主頁</a></li>
+                    <li><a href='all.html'>相關行程</a></li>
+                </ul>
+                <ul>
+                    <li><a href='faq.html'>常見問題</a></li>
+                    <li><a href='contact.html'>聯絡我們</a></li>
+                </ul>             
+            </div>
+            <div class='col-md-4 text-left'>
+                <h4>聯絡我們</h4>
+                <p>Phone: (01)-2345-6789<br>
+                E-Mail: <a href='mailto:xxx@gmail.com'>xxx@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+  
+</footer>
+
+</html>
+
+<!--
+-->

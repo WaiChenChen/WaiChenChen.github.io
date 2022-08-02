@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background position calc</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!--使網頁符合各個裝置的寬度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        /*此為css註解方式*/
+
+        /*class選擇器 以 . 開頭*/
+        .class1{ color:blue;}
+        .class2{ color:brown;}
+        .class3{ color:darkgreen}
+
+        /*id選擇器    以 # 開頭*/
+        #id1{color:coral;}
+        #id2{color:darkorange}
+
+        /*型態選擇器 各種標籤在這裝飾*/
+        h1,h2,h3,h4,h5,h6{
+            font-family: 'Noto Sans Tc',' sans-serif';
+            color:navy;
+            text-align:center;
+        }
+        a,span,li,label{
+            font-family: 'Noto Sans Tc',' sans-serif';
+            color:olivedrab;
+        }
+        img{
+	        max-width:30%;
+        }
+        
+
+        /*後代關係*/
+        p {color:black;}
+        h1 p{color:white}       /*在<h1>內的<p>才會套用此行*/
+        #wrap p{color:white}    /*在id為"wrap"內的<p>才會套用此行*/
+        
+        /*同層相鄰選擇器 與h1相鄰的p會是白色*/
+        p {color:black;}
+        h3 + p{color:rgb(128, 128, 128)}
+
+        /*子選擇器(要緊鄰才會套用，不可穿插其他元素)*/
+        article > p{color:red}
+        .mary > p{color:rgb(193, 122, 0)}
+        #wa > p{color:orange}
+
+        /*方框邊界*/
+        div{
+            margin: 50px;/*div外框與網頁邊界的距離*/
+            background-color: rgb(255, 255, 255);
+            border:3px solid rgb(133, 133, 133);
+            width:200px;/*內部可放的寬與高*/
+            height:20px;
+            overflow:hidden;/*內部超出方框部分就隱藏*/
+            padding:50px 25px;/*4項時:上 右 下 左*/ /*2項時:上下 左右*/
+            display:block;/*換行，若想接續(不想換行)則改成 inline-block*/
+
+            position:relative;
+            top:50px;
+            left:100px;
+        }
+
+        /*通用選擇器 沒裝飾到的都用這項(包含第一句outside)*/
+        * {color:rgb(0, 0, 0)}
+    </style>
+
+
+</head>
+<body>
+    (outside)body首行，此行不放在任何標籤內，因此吃到通用選擇器
+    
+    <img src="pictures/CssBoxModel.png" style="display:block; margin:auto;">
+
+    <!--class有多個標籤時，以css檔案內排序最後面的為主 class內標籤順序無關-->
+    <h1>class選擇器</h1>
+    <div class="class1">class1</div>
+    <div class="class2">class2</div>
+    <div class="class3">class3</div>
+    <div class=" class1 class2 class3 " style="width: 400px;">class1 class2 class3<br>class有多個標籤時，以css檔案內排序最後面的為主，與class內標籤順序無關</div>
+    
+    
+    <!--id標籤內盡量不要有空格，會視為不同id-->
+    <h1>id選擇器</h1>
+    <div id="id1">id1</div>
+    <div id="id2">id2</div>
+
+    <!--同層相鄰選擇器-->
+    <h1>同層相鄰選擇器</h1>
+    <h3>這是h3</h3>
+    <p>p (與h3相鄰所以有套用到「同層相鄰選擇器」)</p>
+    <p>p (與h1不相鄰因此沒有套用到「同層相鄰選擇器」)</p>
+
+    <!--子選擇器(要緊鄰才會套用，不可穿插其他元素)-->
+    <h1>子選擇器(要緊鄰才會套用，不可穿插其他元素)</h1>
+    <article>
+        <p>< article >內的< p ></p>
+    </article>
+    <div class="mary">
+        <p>< class=mary >內的< p ></p>
+    </div>
+    <div id="wa">
+        <p>< id=wa >內的< p ></p>
+    </div>
+</body>
+</html>
